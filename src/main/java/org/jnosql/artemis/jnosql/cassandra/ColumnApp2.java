@@ -34,7 +34,7 @@ public class ColumnApp2 {
     public static void main(String... args) throws Exception {
         Map<String, Object> map = new HashMap<>();
         map.put("cassandra-host-1","localhost");
-        map.put("cassandra-port","9042");  // native cassandra port is 9042
+        map.put("cassandra-port","9042");  // cassandra native protocol port is 9042
         
         ColumnConfiguration configuration = new CassandraConfiguration();
         try(ColumnFamilyManagerFactory entityManagerFactory = configuration.get(Settings.of(map))) {
