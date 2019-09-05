@@ -28,8 +28,8 @@ import org.jnosql.diana.cassandra.column.CassandraConfiguration;
  * @author WayneHu
  */
 public class ColumnApp2 {
-      private static final String KEY_SPACE = "myKeySpace";
-    private static final String COLUMN_FAMILY = "books";
+    private static final String KEY_SPACE = "myKeySpace";  // Need manually create this key space in Cassendra first
+    private static final String COLUMN_FAMILY = "books";   // Need manually create this column family in Cassendra first
 
     public static void main(String... args) throws Exception {
         Map<String, Object> map = new HashMap<>();
